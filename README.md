@@ -7,7 +7,7 @@ technical specification of features and a rationale for them.
 
 GXIP代表GXChain改进提案。 GXIP是一个设计文档，向GXChain社区提供信息，或描述GXChain或其流程或环境的新功能。 GXIPs提供了一个简明的功能技术规范和基本原理。
 
-The distinct document [GXIP Purpose and Guidelines](gxip-0001/README.md) gives a more
+The distinct document [GXIP Purpose and Guidelines](gxip-001/README.md) gives a more
 detailed explanation.
 
 [GXIP目的和指南](gxip-0001/README.md)提供了更多内容
