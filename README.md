@@ -10,7 +10,7 @@ GXIP代表GXChain改进提案。 GXIP是一个设计文档，向GXChain社区提
 The distinct document [GXIP Purpose and Guidelines](gxip-001/README.md) gives a more
 detailed explanation.
 
-[GXIP目的和指南](gxip-0001/README.md)提供了更多内容
+[GXIP目的和指南](gxip-001/README.md)提供了更多内容
 详细解释。
 
 # Available GXIPs(当前GIP列表)
