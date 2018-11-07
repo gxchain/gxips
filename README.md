@@ -17,4 +17,4 @@ detailed explanation.
 
 Number             | Title                                                    | Owner             | Type           | Status
 -------------------|----------------------------------------------------------|-------------------|----------------|--------
-[1](gxip-0001.md)  | todo                              | todo      | Informational  | Draft
+[1](gxip-0001.md)  | 智能合约编程语言支持TypeScript                          | todo      | Informational  | Draft
