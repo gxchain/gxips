@@ -4,6 +4,8 @@
     Status: Draft
     Type: Informational
     Created: 2018-11-07
+    
+[中文](./README-CN.md)
 
 # What is a GXIP?
 
