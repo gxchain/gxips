@@ -40,7 +40,7 @@ There are two kinds of GXIPs:
 # Contributing
 
 People wishing to submit GXIPs first should propose their idea as github
-issue first. After discussion you will be assigned a number for the bsip
+issue first. After discussion you will be assigned a number for the GXIP
 and can send a pull request for your *draft*. Once consensus among
 discussion participants is reached, the status can be switched to
 *accepted*. From this time on, major changes of the document will not be
