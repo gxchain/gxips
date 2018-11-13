@@ -13,7 +13,7 @@ GXIP代表GXChain改进提案，但也可以视为改进协议。 GXIP是一个�
 
 由于GXIP在版本化存储库中作为文本文件维护，因此其修订历史记录是功能提议的历史记录。
 
-# GXIP类型
+# GXIP有哪些类型
 
 GXIP分为两种：
 
@@ -21,7 +21,7 @@ GXIP分为两种：
 
 * **协议升级类GXIP**描述影响大多数或所有GXChain实施的变更，例如协议的更改，块或事务有效性规则的更改，或影响使用GXChain的应用程序的互操作性的任何更改及添加。
 
-# 参与贡献
+# 如何参与贡献
 
 希望提交GXIP的人应首先在issue中提出他们的想法。讨论结束后，将获得一个gxip的编号，以这个编号为目录名提交状态为*draft*(草稿)Pull Request。一旦达成讨论参与者之间的共识，状态将变更为*Accept*(接受)。自此，不允许对文件进行重大更改。
 
@@ -33,40 +33,23 @@ GXIP分为两种：
 
 在编写GXIP之前公开征求一个想法是为了节省潜在的修改时间。此前有许多改变GXChain的想法，都因为各种原因被拒绝了。所以，请首先询问GXChain社区你的想法是否是原创的，这有助于防止花费太多时间在讨论在此前已经被拒绝的事情上（搜索互联网并不总是那么有效）。它还有助于确保该想法适用于整个社区而不仅仅是作者。一个想法对作者来说听起来不错并不意味着它适用于大多数使用GXChain的大多数人。
 
+在讨论之后，该提案应该通过GXIP草案形式发送给GXChain开发人员和GXIP编辑人员。该草案必须以如下所述GXIP格式编写，否则将会被打回。
 
-在讨论之后，该提案应该通过GXIP草案发送给GXChain开发人员和GXIP编辑人员。该草案必须以如下所述GXIP格式编写，否则可能会被打回。
+在GXIP编辑人员批准之后，他将为GXIP分配一个编号，标记它的状态为“draft”(草稿)，并将其添加到git仓库。 GXIP编辑人员不会无理拒绝GXIP。拒绝GXIP状态的原因包括重复工作，技术上不健全，没有提供适当的动机或解决向后兼容性，或者不符合GXChain理念。
 
-If the GXIP editor approves, he will assign the GXIP a number, label it, give it
-status "Draft", and add it to the git repository. The GXIP editor will not
-unreasonably deny a GXIP. Reasons for denying GXIP status include duplication
-of effort, being technically unsound, not providing proper motivation or
-addressing backwards compatibility, or not in keeping with the GXChain
-philosophy.
+GXIP作者可以根据需要在git仓库中更新草案。作者也可以通过提交Pull Request的方式对草案进行更新。
 
-The GXIP author may update the Draft as necessary in the git repository. Updates
-to drafts may also be submitted by the author as pull requests.
+被接受的GXIP，它必须符合某些最低标准。它必须包含对提议改善的清晰和完整的描述。这些改动必须是净改善。如果适用，拟议的实施必须是可靠的，不得使协议复杂化。
 
-For a GXIP to be accepted it must meet certain minimum criteria. It must be a
-clear and complete description of the proposed enhancement. The enhancement must
-represent a net improvement. The proposed implementation, if applicable, must be
-solid and must not complicate the protocol unduly.
+GXIP发布后，必须完成参考实施部分。当参考实施完成并由股东通过批准投票接受时，状态将更改为“已接受”。 GXIP也可能被社区“拒绝”。
 
-Once a GXIP has been published, the reference implementation must be
-completed.  When the reference implementation is complete and accepted
-by the shareholders via approval voting, the status will be changed to
-"Accepted". A GXIP can also be "Rejected" by shareholders.
+此外，GXIP可以被指定为“延期”状态。当GXIP没有取得进展时，GXIP作者或编辑人员可以为GXIP分配此状态。延迟GXIP后，GXIP编辑者可以将其重置为草稿状态。
 
-Furthermore, a GXIP can be assigned status "Deferred". The GXIP author or editor
-can assign the GXIP this status when no progress is being made on the GXIP. Once
-a GXIP is deferred, the GXIP editor can re-assign it to draft status.
+GXIP也可以被不同的GXIP取代，使原始的过时。这适用于信息类GXIP，比如API的第2版可以替换版本1。
 
-GXIPs can also be superseded by a different GXIP, rendering the original
-obsolete. This is intended for Informational GXIPs, where version 2 of an API
-can replace version 1.
+# GXIP包含哪些内容
 
-# What belongs in a GXIP?
-
-Each GXIP *should* have the following parts:
+每个GXIP *必须* 包含以下几个部分:
 
 * Preamble -- RFC 822 style headers containing meta-data about the GXIP,
   including the GXIP number, a short descriptive title (limited to a maximum of
