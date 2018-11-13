@@ -100,4 +100,3 @@ GXIPs 应该通过markdown语法来书写. 图片文件应该被包含在GXIP对
 # 历史
 
 本文档源自Python的PEP-0001和比特币BIP-0001。在许多地方，文本只是被复制和修改。尽管PEP-0001 / BIP-0001文本由Barry Warsaw，Jeremy Hylton和David Goodger编写，但他们对GXChain改进过程中的使用不负责任，并且不必GXChain或GXIP特有的技术问题做出回应。请将所有意见直接发送给GXIP编辑人员或GXChain开发组邮件列表。
-This document was derived heavily from Python's PEP-0001 and Bitcoin BIP-0001.
