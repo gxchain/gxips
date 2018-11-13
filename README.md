@@ -11,7 +11,7 @@ GXIPs提供了一个简明的功能技术规范和基本原理。
 The distinct document [GXIP Purpose and Guidelines](gxip-001/README.md) gives a more
 detailed explanation.
 
-[GXIP目的和指南](gxip-001/README.md)给出了更详细的解释。
+[GXIP目的和指南](gxip-001/README-CN.md)给出了更详细的解释。
 
 # Available GXIPs(当前GIP列表)
 
