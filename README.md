@@ -17,4 +17,5 @@ detailed explanation.
 
 Number             | Title                                                    | Owner             | Type           | Status
 -------------------|----------------------------------------------------------|-------------------|----------------|--------
-[1](gxip-0001.md)  | 智能合约编程语言支持TypeScript                          | todo      | Informational  | Draft
+[1](gxip-0001.md)  | 智能合约编程语言支持TypeScript                          | albert      | Informational  | Draft
+[2](gxip-0002.md)  | 系统手续费机制调整                         | albert      | Protocol  | Draft
