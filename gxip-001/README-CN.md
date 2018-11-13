@@ -3,7 +3,7 @@
     Authors: David Lan <lanhaoxiang@gxb.io>
     Status: Draft
     Type: Informational
-    Created: 2018-11-07
+    Created: 2018-11-13
 
 # 什么是 GXIP?
 
@@ -51,96 +51,53 @@ GXIP也可以被不同的GXIP取代，使原始的过时。这适用于信息类
 
 每个GXIP *必须* 包含以下几个部分:
 
-* Preamble -- RFC 822 style headers containing meta-data about the GXIP,
-  including the GXIP number, a short descriptive title (limited to a maximum of
-  44 characters), the names, and optionally the contact info for each author,
-  etc.
+* Preamble(前言) -- RFC 822 格式的包含GXIP元信息描述的的头部信息，包括GXIP编号、一个简短的标题（限制在44个字符内）、命名，也可以附加作者的联系方式等
 
-* Abstract -- a short (~200 word) description of the technical issue being
-  addressed.
+* Abstract(概要) -- 简短地描述正在解决的技术问题 (约200字左右) 
 
-* Copyright/public domain -- Each GXIP must either be explicitly labelled as
-  placed in the public domain (see this GXIP as an example) or licensed under
-  the Open Publication License.
+* Copyright/public domain(版权/公共域) -- 每个GXIP必须明确标记为放置在公共域中（请参阅此GXIP作为示例）或根据开放出版许可证获得许可。
 
-* Motivation -- The motivation is critical for GXIPs that want to change the
-  GXChain protocol. It should clearly explain why the existing protocol
-  specification is inadequate to address the problem that the GXIP solves. GXIP
-  submissions without sufficient motivation may be rejected outright.
+* Motivation(动机) -- 对于想要更改GXChain协议的GXIP，动机至关重要。它应该清楚地解释为什么现有的协议规范不足以解决GXIP解决的问题。没有足够动机的GXIP提交可能会被彻底拒绝。
 
-* Rationale -- The rationale fleshes out the specification by describing what
-  motivated the design and why particular design decisions were made. It should
-  describe alternate designs that were considered and related work, e.g. how the
-  feature is supported in other languages. The rationale should provide evidence
-  of consensus within the community and discuss important objections or concerns
-  raised during discussion.
+* Rationale(合理性描述) -- 通过阐述原因和动机来论证观点。这部分内容应该描述可以选择的几种设计方案，以及涉及的相关工作。比如，如何在其他语言中支持该功能。合理性描述部分应该提供社区内共识的证据，并讨论在此前讨论中提出的重要异议或关注点。
 
-* Specification -- The technical specification should describe the syntax and
-  semantics of any new feature. The specification should be detailed enough to
-  allow competing, interoperable implementations for any of the current
-  GXChain platforms.
+* Specification(规范) -- 技术规范应描述任何新功能的语法和语义。规范应该足够详细，以允许任何当前GXChain平台的竞争性和互操作性的实现。
 
-* Discussion -- The GXIP shall include a discussion on positive and negative
-  effects on the GXChain ecosystem shall it be accepted by shareholders. This
-  section is supposed to be the most important section for shareholders to grasp
-  the full impact of the GXIP and help shareholders to make a decision.
+* Discussion(讨论) -- GXIP应包括对GXChain生态系统的正面和负面影响的讨论，并由社区接受。本节应该是股东最重要的部分，以便掌握GXIP的全部影响并帮助社区做出决策。
 
-* Summary for Shareholders -- Most GXIPs will probably be of technical nature.
-  However, many shareholders are not as technical as the author of a particular
-  GXIP. This non-technical paragraph serves as a place which can be used to
-  to interact with shareholders and help them form their opinion. It is not
-  meant to be a marketing driven paragraph to convince shareholders to vote
-  **for** or **against** a proposal, though.
+* Summary for Shareholders(意见总结) -- 大多数GXIP可能具有技术性质。但是，许多股东并不像特定GXIP的作者那样具有技术能力。这个非技术性段落可以用来与股东互动并帮助他们形成自己的观点。然而，这并不意味着在此给股东提出支持或反对提案的指导性意见。
 
-# GXIP Formats and Templates
+# GXIP 格式和模板
 
-GXIPs should be written in markdown format. Image files should be
-included in a subdirectory for that GXIP. A template including the header
-preamble is provided in [this repository](GXIPs-Template.md).
+GXIPs 应该通过markdown语法来书写. 图片文件应该被包含在GXIP对应的子目录中，在本仓库中我们提供了一个包含前言的[模板](GXIPs-Template.md)。
 
-# GXIP Editors
+# GXIP 标记人员
 
-The current GXIP editors are:
+当前的编辑人员有:
 
  * Albert <zhuliting@gxb.io>
  * David Lan <lanhaoxiang@gxb.io>
 
-The editors don't pass judgement on GXIPs. We merely do the administrative &
-editorial part.
+编辑人员不会对GXIPs的内容做出判断。我们只做行政和编辑部分。
 
-Many GXIPs are written and maintained by developers with write access to the
-GXChain codebase. The GXIP editors monitor GXIP changes, and correct any
-structure, grammar, spelling, or markup mistakes we see.
+许多GXIP由具有GXChain代码库写入权限的开发人员编写和维护。 GXIP编辑人员监控GXIP的变化，并纠正看到的任何结构，语法，拼写或标记错误。
 
-For each new GXIP that comes in an editor does the following:
+对于每个新GXIP编辑人员会做以下事情：
 
-* Read the GXIP to check if it is ready: sound and complete. The ideas must make
-  technical sense, even if they don't seem likely to be accepted.
-* The title should accurately describe the content.
-* Edit the GXIP for language (spelling, grammar, sentence structure, etc.),
-  markup (for reST GXIPs), code style (examples should match GXIP 8 & 7).
+* 阅读GXIP以检查它是否是内容完整的。这些想法必须具有技术意义，即使它们似乎不太可能被接受。
+* 标题应准确描述内容。
+* 组织GXIP语言（拼写，语法，句子结构等），标记（对于reST GXIPs），代码样式。
 
-Once the GXIP is ready for the repository it should be submitted as a "pull
-request" to the [gxchain/gxips](https://github.com/gxchain/gxips) repository
-on GitHub where it may get further feedback.
+当一个GXIP准备好被提交到仓库时，应该以Pull Request的方式提交到[gxchain/gxips](https://github.com/gxchain/gxips)，在这里可以获得后续的反馈
 
-The GXIP editor will:
+此时，GXIP编辑人员将做以下几件事情:
 
-* Assign a GXIP number (almost always just the next available number, but
-  sometimes it's a special/joke number, like 666 or 3141) in the pull request
-  comments.
-* Merge the pull request when the author is ready (allowing some time for
-  further peer review).
-* List the GXIP in [README.md](https://github.com/gxchain/gxips/blob/master/README.md)
-* Send email back to the GXIP author with next steps (post to GXChain mailing
-  list).
+* 在GXIP的Pull Request评论区分配一个编号，通常这个编号是自增的，有时也可能是一个特殊的编号（例如666或3141）
+* 在作者准备好时合并Pull Requst（允许一些时间进行进一步的同行评审）
+* 在[README.md](https://github.com/gxchain/gxips/blob/master/README.md)中列出这个GXIP
+* 把后续步骤通过电子邮件发给GXIP作者（发布到GXChain邮件列表）。
 
-# History
+# 历史
 
+本文档源自Python的PEP-0001和比特币BIP-0001。在许多地方，文本只是被复制和修改。尽管PEP-0001 / BIP-0001文本由Barry Warsaw，Jeremy Hylton和David Goodger编写，但他们对GXChain改进过程中的使用不负责任，并且不必GXChain或GXIP特有的技术问题做出回应。请将所有意见直接发送给GXIP编辑人员或GXChain开发组邮件列表。
 This document was derived heavily from Python's PEP-0001 and Bitcoin BIP-0001.
-In many places text was simply copied and modified. Although the
-PEP-0001/BIP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David
-Goodger, they are not responsible for its use in the GXChain Improvement
-Process, and should not be bothered with technical questions specific to
-GXChain or the GXIP process. Please direct all comments to the GXIP editors
-or the GXChain development mailing list.
