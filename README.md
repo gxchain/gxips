@@ -18,3 +18,4 @@ detailed explanation.
 Number             | Title                                                    | Owner             | Type           | Status
 -------------------|----------------------------------------------------------|-------------------|----------------|--------
 [1](gxip-001)  | GXIP Purpose and Guidelines                         | albert      | Informational  | Draft
+[2](gxip-002)  | 跨合约调用                         | albert      | Protocol  | Draft
