@@ -9,6 +9,7 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 
 ## 权限
+1. 合约间调用，action的sender必须为context中的current receiver
 
 
 ## 资源使用
