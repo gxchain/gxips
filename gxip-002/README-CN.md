@@ -20,3 +20,6 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 
 ## 消息通知机制
+1. 通过inline action 实现消息通知。
+2. 将action跟帐户关联，作为帐户的action history， 保存至数据库。
+3. 增加启动参数，控制本地action history。
