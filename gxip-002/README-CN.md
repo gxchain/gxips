@@ -16,7 +16,12 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 ### RAM
 
+1. payer支付RAM费用
+2. RAM费用，统一结算给系统帐户ram-account
+3. payer删除RAM时，按照系统全局RAM价格，从ram-account返回RAM费用
+
 ### CPU
+参考RAM
 
 
 ## 消息通知机制
