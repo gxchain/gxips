@@ -10,8 +10,11 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 ## 权限
 1. 合约间调用，action的sender必须为context中的current receiver
+
 例子：
+
 用户A ==> 合约B ==>  合约C
+
 则合约B执行前，校验sender必须为A， 合约C执行前检验sender必须为B
 
 ## 资源使用
