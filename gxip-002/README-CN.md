@@ -35,6 +35,11 @@ GXChain智能合约，增加跨合约调用(DOING)
 ### CPU
 1. CPU费用，由sender支付，结算给系统帐户cpu-account。
 
+例子：
+
+用户A ==> 合约B ==> 合约C
+则 A ==> 合约B 由A支付CPU费用， 合约B ==> 合约C 由合约B支付CPU费用。
+
 ## 消息通知机制
 1. 通过inline action 实现消息通知。一个交易执行完成后，收集当前的action，并通过信号触发plugin保存action history.
 2. 将action跟帐户关联，作为帐户的action history， 通过action history plugin保存至数据库(可考虑mongodb)。
