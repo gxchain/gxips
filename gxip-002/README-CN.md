@@ -37,8 +37,9 @@ GXChain智能合约，增加跨合约调用(DOING)
 ## 消息通知机制
 1. 通过inline action 实现消息通知。
 2. 将action跟帐户关联，作为帐户的action history， 通过action history plugin保存至数据库(可考虑mongodb)。
-3. 增加启动参数，控制本地action history，支持按帐户过滤、保存最近N条等功能默认不保存action history。
-4. action history object 提供txid反查、根据sequence_num查询， 主要字段：
+3. 任意帐户都可以接收消息通知(普通帐户不响应消息通知)； 合约帐户可以选择是否响应消息通知。
+4. 增加启动参数，控制本地action history，支持按帐户过滤、保存最近N条等功能默认不保存action history。
+5. action history object 提供txid反查、根据sequence_num查询， 主要字段：
 ```
 uint64_t     	  action_sequence_num; 
 uint32_t             block_num;
