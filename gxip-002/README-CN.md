@@ -7,7 +7,8 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 ## 实现过程：
 
-通过inline action实现。
+1. 通过inline action实现。
+2. 限制跨合约调用的递归的深度。
 
 ## 权限
 
