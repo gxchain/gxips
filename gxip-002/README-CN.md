@@ -36,7 +36,7 @@ GXChain智能合约，增加跨合约调用(DOING)
 1. CPU费用，由sender支付，结算给系统帐户cpu-account。
 
 ## 消息通知机制
-1. 通过inline action 实现消息通知。
+1. 通过inline action 实现消息通知。一个交易执行完成后，收集当前的action，并通过信号触发plugin保存action history.
 2. 将action跟帐户关联，作为帐户的action history， 通过action history plugin保存至数据库(可考虑mongodb)。
 3. 任意帐户都可以接收消息通知(普通帐户不响应消息通知)； 合约帐户可以选择是否响应消息通知。
 4. 增加启动参数，控制本地action history，支持按帐户过滤、保存最近N条等功能默认不保存action history。
