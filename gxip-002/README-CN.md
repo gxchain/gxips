@@ -60,10 +60,10 @@ GXChain智能合约，增加跨合约调用(DOING)
 4. 增加启动参数，控制本地action history，支持按帐户过滤、保存最近N条等功能默认不保存action history。
 5. action history object 提供txid反查、根据sequence_num查询， 主要字段：
 ```
-uint64_t     	  action_sequence_num; 
-uint32_t             block_num;
-action 		  data; 
-transaction_id_type  trx_id;
+uint64_t     	        action_sequence_num; 
+uint32_t              block_num;
+action 		            data; 
+transaction_id_type   trx_id;
 
 ```
 
@@ -72,6 +72,6 @@ transaction_id_type  trx_id;
 
 ### 智能合约调用手续费分成
 
-智能合约调用手续费分配：开发者20%， 用户推荐人20%， BP 60%， 可由理事会动态调整。
+智能合约调用手续费分配：开发者20%， 用户推荐人20%， 公信节点 60%， 可由理事会动态调整。
 
 其中开发者的20% 暂存到系统帐户，RAM释放后返还给开发者。
