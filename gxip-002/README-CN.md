@@ -35,15 +35,15 @@ GXChain智能合约，增加跨合约调用(DOING)
 
 1. 当前合约执行过程中的RAM使用量，由update_ram_usage函数统计
 2. update_ram_usage负责维护map<account_id, ram_usage>,  根据payer更新payer对应的ram usage
+3. 允许ram_usage为负数，即当前调用没有增加RAM消耗，而是删除了RAM
 
 #### RAM 费用结算
 1. 在合约调用完成后，调用get_ram_usage获取到ma<account_id, ram_usage>，结算当前合约调用，涉及到的所有帐户RAM费用
 2. 如果有删除RAM，由按照全局参数，返还对应的RAM手续费
-3. basic_fee不返还
+3. RAM返还只限于消耗RAM时的费用，调用合约的basic_fee不返还
 
 #### 手续费跟踪
 1. 合约调用相关的手续费，写入区块。(有可能涉及到多个帐户)
-
 
 ### CPU
 1. CPU费用，由sender支付，结算给系统帐户cpu-account。
