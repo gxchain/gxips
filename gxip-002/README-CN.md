@@ -21,8 +21,8 @@ struct action {
 
 ## 权限
 
-- 普通帐户调用合约，action中的actor为调用方，即actor支付广播手续费
-- 合约调用action中的actor，必须为发起调用的合约帐户，即当前context的receiver,  interface或context中做校验
+- 普通帐户调用合约，action的sender为调用方，即sender支付广播手续费
+- 合约调用action的sender，必须为发起调用的合约帐户，即当前context的receiver,  interface或context中做校验
 
 例子：
 
