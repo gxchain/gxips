@@ -11,6 +11,7 @@ GXChain智能合约，增加跨合约调用(DOING)
 1. 通过inline action实现。
 2. 限制跨合约调用的递归的深度， 暂定3层。
 
+合约之间通信的消息体结构：
 ```
 struct action {
     uint64_t                   account;
