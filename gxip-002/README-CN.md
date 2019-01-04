@@ -11,11 +11,12 @@ GXChain智能合约，增加跨合约调用(DOING)
 2. 限制跨合约调用的递归的深度， 暂定3层。
 
 ```
-   struct action {
-      uint64_t                   account;
-      action_name                name;
-      bytes                      data;
-    };
+struct action {
+    uint64_t                   account;
+    action_name                name;
+    asset                      amount;
+    bytes                      data;
+};
 ```
 
 ## 权限
