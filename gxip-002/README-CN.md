@@ -14,6 +14,7 @@ GXChain智能合约，增加跨合约调用(DOING)
 合约之间通信的消息体结构：
 ```
 struct action {
+    uint64_t                   actor;
     uint64_t                   account;
     action_name                name;
     asset                      amount;
