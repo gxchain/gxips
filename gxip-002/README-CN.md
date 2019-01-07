@@ -27,6 +27,7 @@ struct action {
 - 普通帐户调用合约，action的sender为调用方，即sender支付广播手续费
 - 合约调用action的sender，必须为发起调用的合约帐户，即当前context的receiver,  interface或context中做校验
 - get_trx_sender() 返回合约的sender， get_trx_origin() 返回原始调用者，即调用合约的用户id
+- payer的权限必须为sender或者合约本身，不能是其它的帐户
 
 例子：
 
