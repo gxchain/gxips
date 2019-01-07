@@ -68,6 +68,8 @@ struct action {
 则 A ==> 合约B 由A支付CPU费用， 合约B ==> 合约C 由合约B支付CPU费用。
 
 ## 消息通知机制
+action history通过plugin方式实现， 数据保存到mongodb， 支持http查询，如需要本地开启，在启动witness_node时需要带上特定参数。
+
 1. 通过inline action 实现消息通知。一个交易执行完成后，收集当前的action，并通过信号触发plugin保存action history.
 2. 将action跟帐户关联，作为帐户的action history， 通过action history plugin保存至数据库(可考虑mongodb)。
 3. 任意帐户都可以接收消息通知(普通帐户不响应消息通知)； 合约帐户可以选择是否响应消息通知。
