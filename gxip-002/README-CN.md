@@ -92,6 +92,6 @@ transaction_id_type     trx_id;
 
 ##### 方案2
 1. basic_fee 和CPU费用暂存系统帐户，3天后返还。(3天可由理事会动态调整)
-2. RAMU费用，暂存系统帐户，释放后返还给payer。
+2. RAM费用，暂存系统帐户，释放后返还给payer。
 
 
