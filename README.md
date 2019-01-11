@@ -1,5 +1,7 @@
 # GXChain Improvement Proposals(GXChain改进提案)
 
+<img width="400px" src='https://raw.githubusercontent.com/gxchain/gxips/master/assets/images/task-gxips.png'/>
+
 GXIP stands for GXChain Improvement Proposal. A GXIP is a design document
 providing information to the GXChain community, or describing a new feature for
 GXChain or its processes or environment. GXIPs provide a concise
