@@ -80,8 +80,15 @@ uint64_t                action_sequence_num;
 uint32_t                block_num;
 action                  data;
 transaction_id_type     trx_id;
-
+bool                    irreversible;
+timestamps              updatedAt;
 ```
+
+6. 如果witness_node启动时带了--replay-blockchain 或者--resync-blockchain，则需要清除整个mongodb
+
+
+
+
 
 
 ## 手续费
