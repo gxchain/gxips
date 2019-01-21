@@ -99,3 +99,6 @@ timestamps              updatedAt;
 3. 增加全局参数contract_fee_vesting_seconds默认259200秒，即3天。
 
 
+## 全局动态参数
+1. 跨合约调用深度 max-inter-contract-depth， 默认3
+2. 跨合约调用basic_fee费用暂存时间 contract_basic_fee_vesting_period_seconds， 默认259200秒，即3天
