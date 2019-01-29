@@ -52,7 +52,7 @@ struct action {
 3. 允许ram_usage为负数，即当前调用没有增加RAM消耗，而是删除了RAM
 
 #### RAM 费用结算
-1. 在合约调用完成后，调用get_ram_usage获取到ma<account_id, ram_usage>，结算当前合约调用，涉及到的所有帐户RAM费用
+1. 在合约调用完成后，调用get_ram_usage获取到map<account_id, ram_usage>，结算当前合约调用，涉及到的所有帐户RAM费用
 2. 如果有删除RAM，由按照全局参数，返还对应比例的RAM手续费
 3. RAM返还只限于消耗RAM时的费用，调用合约的basic_fee不返还
 
@@ -94,11 +94,11 @@ timestamps              updatedAt;
 ## 手续费
 
 ### 智能合约调用手续费
-##### 方案1
-1. 智能合约调用手续费分配：开发者20%， 用户推荐人20%， 公信节点 60%， 可由理事会动态调整。 其中开发者的20% 暂存到系统帐户，RAM释放后返还给开发者。
-
-##### 方案2
 1. basic_fee 和CPU费用暂存系统帐户，3天后返还。(3天可由理事会动态调整)
-2. RAM费用，暂存系统帐户，释放后返还给payer。
+2. RAM费用，暂存系统帐户，释放后返还给payer, 3天后可完全取回。(3天可由理事会动态调整)
+3. 增加全局参数contract_fee_vesting_seconds默认259200秒，即3天。
 
 
+## 全局动态参数
+1. 跨合约调用深度 max-inter-contract-depth， 默认3
+2. 跨合约调用basic_fee费用暂存时间 contract_basic_fee_vesting_period_seconds， 默认259200秒，即3天

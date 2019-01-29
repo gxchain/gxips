@@ -28,3 +28,4 @@ Number             | Title                                                    | 
 -------------------|----------------------------------------------------------|-------------------|----------------|--------
 [1](gxip-001)  | GXIP Purpose and Guidelines                         | albert      | Informational  | Draft
 [2](gxip-002)  | 跨合约调用                         | albert      | Protocol  | Draft
+[3](gxip-003)  | 收款码 URI 方案                         | louie      | Standard  | Draft
