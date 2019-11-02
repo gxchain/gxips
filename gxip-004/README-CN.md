@@ -39,6 +39,7 @@ struct offline_operation : public base_operation
     };  
 
     account_id_type                             from;
+    validtor_status                             new_status;
     extensions_type                             extensions;
 
     account_id_type fee_payer() const { return from; }
@@ -55,6 +56,10 @@ struct offline_operation : public base_operation
 1. 交易发起者是验证人节点
 2. 验证人节点状态是online
 3. 账户余额可以支付交易手续费
+
+cli_wallet构造交易时new_status默认值为offline，表示主动下线。
+
+为了记录验证人节点禁闭的交易历史，系统强制验证人节点禁闭时，执行一个virutal op，其中new_status为jailed。
 
 #### 节点状态
 验证人节点的状态有3种：
